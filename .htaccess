@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)\.ashx$ $1.php [L]
+RewriteRule ^(.*)\.aspx$ $1.php [L]
+RewriteRule ^(.*)\.lua$ $1.php [L]
